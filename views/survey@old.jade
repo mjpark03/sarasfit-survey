@@ -1,0 +1,42 @@
+extends layout
+
+style
+
+block content
+
+  script(src='/js/sarasfit/survey.js' type='text/javascript')
+
+  div.container
+
+    div.row
+      div(class="col-md-12")
+        div.content
+          span(class="glyphicon glyphicon-hand-right" aria-hidden="true")
+          h4 안녕하세요. 사라스핏의 SARA입니다:)
+          h4 저희 서비스를 더욱 편리하게 이용하실수 있게 간단한 브라 핏테스트를 준비했어요.
+          h4 자신에게 맞는 속옷추천을 위해 지금 등록해보세요~
+
+    div.row
+      div(class="col-md-12")
+        div.content
+          span(class="glyphicon glyphicon-hand-right" aria-hidden="true")
+          h4 먼저 생년월일을 YYYY/MM/DD형식으로 입력해주세요.
+          p 예) 19xx/08/10
+          div.col-xs-6
+            input(type="text" class="form-control input-lg" id="birth")
+
+    div.row
+      div(class="col-md-12")
+        div.content
+          span(class="glyphicon glyphicon-hand-right" aria-hidden="true")
+          h4 자신의 가슴모양을 알아볼까요?
+          select(class="image-picker show-html" style="text-align: center;" id="Q3")
+            option(data-img-src="/images/CSF01.jpeg" value="1")  둥근형
+            option(data-img-src="/images/CSF02.jpeg" value="2")  퍼진형
+            option(data-img-src="/images/CSF03.jpeg" value="3")  새가슴
+
+    div.row
+      div(class="col-md-12 text-center")
+        br
+        button(type="button" class="btn btn-primary btn-lg" id="finish") FINISH
+        br

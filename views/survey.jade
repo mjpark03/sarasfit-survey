@@ -1,0 +1,193 @@
+extends layout
+
+style
+
+block content
+
+  script(src='/js/sarasfit/survey.js' type='text/javascript')
+
+  header(id="header-survey")
+
+    section(id="slider")
+      div(class="container-full")
+        div(class="slider")
+          div(id="main-slider" class="carousel slide")
+            ol(class="carousel-indicators")
+              li(data-target="#main-slider" data-slide-to="0" class="active")
+              li(data-target="#main-slider" data-slide-to="1")
+              li(data-target="#main-slider" data-slide-to="2")
+              li(data-target="#main-slider" data-slide-to="3")
+              li(data-target="#main-slider" data-slide-to="4")
+              li(data-target="#main-slider" data-slide-to="5")
+              li(data-target="#main-slider" data-slide-to="6")
+              li(data-target="#main-slider" data-slide-to="7")
+              li(data-target="#main-slider" data-slide-to="8")
+              li(data-target="#main-slider" data-slide-to="9")
+              li(data-target="#main-slider" data-slide-to="10")
+              li(data-target="#main-slider" data-slide-to="11")
+
+            div(class="carousel-inner")
+              div(class="active item")
+                div(class="container slide-element")
+                  div(class="content_slide")
+                    div(class="content_slide_survey")
+                      span(class="glyphicon glyphicon-hand-right" aria-hidden="true")
+                        h3 먼저 생년월일을 YYYY/MM/DD형식으로 입력해주세요.
+                        h4 예) 19xx/08/10
+                        div.col-xs-6
+                          br
+                          input(type="text" class="form-control input-lg" id="birth")
+
+              div(class="item")
+                div(class="container slide-element")
+                  div(class="content_slide")
+                    div(class="content_slide_survey")
+                      span(class="glyphicon glyphicon-hand-right" aria-hidden="true")
+                        h3 자신의 가슴모양을 알아볼까요?
+                        h4 정면
+                        select(class="image-picker show-html" multiple="multiple" style="text-align: center;" id="chestShapeFrontCd")
+                          option(data-img-src="/images/CSF01.jpeg" value="CSF01")  둥근형
+                          option(data-img-src="/images/CSF02.jpeg" value="CSF02")  퍼진형
+                          option(data-img-src="/images/CSF03.jpeg" value="CSF03")  새가슴
+
+              div(class="item")
+                div(class="container slide-element")
+                  div(class="content_slide")
+                    div(class="content_slide_survey")
+                      span(class="glyphicon glyphicon-hand-right" aria-hidden="true")
+                        h3 자신의 가슴모양을 알아볼까요?
+                        h4 측면
+                        select(class="image-picker show-html" style="text-align: center;" id="chestShapeSideCd")
+                          option(data-img-src="/images/CSS01.jpeg" value="CSS01") A.납작형
+                          option(data-img-src="/images/CSS02.jpeg" value="CSS02") B.원추형
+                          option(data-img-src="/images/CSS03.jpeg" value="CSS03") C.반구형
+                          option(data-img-src="/images/CSS04.jpeg" value="CSS04") D.하수형
+
+              div(class="item")
+                div(class="container slide-element")
+                  div(class="content_slide")
+                    div(class="content_slide_survey")
+                      span(class="glyphicon glyphicon-hand-right" aria-hidden="true")
+                        h3 브라 착용 후, 공간이 생기거나 헐렁한 느낌이 나는 부분이 있나요?
+                        select(class="image-picker show-html" style="text-align: center;" id="braSpaceCd")
+                          option(data-img-src="/images/BS01.jpeg" value="BS01") 윗부분에 공간이 남음
+                          option(data-img-src="/images/BS02.jpeg" value="BS02") 밑밴드를 맨끝에 해도 남음
+                          option(data-img-src="/images/BS03.jpeg" value="BS03") 둘다 포함
+                          option(data-img-src="/images/BS04.jpeg" value="BS04") 대체적으로 잘 맞음
+
+              div(class="item")
+                div(class="container slide-element")
+                  div(class="content_slide")
+                    div(class="content_slide_survey")
+                      span(class="glyphicon glyphicon-hand-right" aria-hidden="true")
+                        h3 브라 착용 후, 살이 삐져나오는 부분이 있나요?
+                        select(class="image-picker show-html" multiple="multiple" style="text-align: center;" id="braWearCd")
+                          option(data-img-src="/images/BW01.jpeg" value="BW01")  윗부분이 너무 봉긋
+                          option(data-img-src="/images/BW02.jpeg" value="BW02")  옆부분 겨드랑이 삐져나옴
+                          option(data-img-src="/images/BW03.jpeg" value="BW03")  등부분 겨드랑이 삐져나옴
+                          option(data-img-src="/images/BW04.jpeg" value="BW04")  대체적으로 잘 맞음
+
+              div(class="item")
+                div(class="container slide-element")
+                  div(class="content_slide")
+                    div(class="content_slide_survey")
+                      span(class="glyphicon glyphicon-hand-right" aria-hidden="true")
+                        h3 1년 미만 착용한 브라 중 가장 편해서 자주입는 브라의 브랜드와 사이즈가 무엇입니까?
+                        h3 a. 브랜드 이름
+                        h4 만약 없으시다면 '없음'을 적어주세요.
+                        div.col-xs-6
+                          br
+                        input(type="text" class="form-control input-lg" id="brandName")
+
+              div(class="item")
+                div(class="container slide-element")
+                  div(class="content_slide")
+                    div(class="content_slide_survey")
+                      span(class="glyphicon glyphicon-hand-right" aria-hidden="true")
+                        h3 1년 미만 착용한 브라 중 가장 편해서 자주입는 브라의 브랜드와 사이즈가 무엇입니까?
+                        h3 b. 가슴둘레
+                          h4 예) 85
+                          div.col-xs-6
+                            br
+                            input(type="text" class="form-control input-lg" id="brandBust")
+
+              div(class="item")
+                div(class="container slide-element")
+                  div(class="content_slide")
+                    div(class="content_slide_survey")
+                      span(class="glyphicon glyphicon-hand-right" aria-hidden="true")
+                        h3 1년 미만 착용한 브라 중 가장 편해서 자주입는 브라의 브랜드와 사이즈가 무엇입니까?
+                        h3 c. 컵 사이즈
+                          h4 예) AA, A, B, C, D
+                          div.col-xs-6
+                            br
+                            input(type="text" class="form-control input-lg" id="brandCup")
+
+              div(class="item")
+                div(class="container slide-element")
+                  div(class="content_slide")
+                    div(class="content_slide_survey")
+                      span(class="glyphicon glyphicon-hand-right" aria-hidden="true")
+                        h3 1년 미만 착용한 브라 중 가장 편해서 자주입는 브라의 브랜드와 사이즈가 무엇입니까?
+                        h3 d. 1년 미만된 브라를 착용 시, 훅앤아이(등쪽)를 몇 번째 고리에 착용하시나요?
+
+                        div.col-xs-6
+                          br
+                          img(src="/images/08-01.jpeg" width="30%" style="margin-bottom: 10px;" class="img-responsive")
+                          br
+                          select(class="form-control" id="brandHookCd")
+                            option(value="HE01")  맨 안쪽 (가장 타이트함)
+                            option(value="HE02")  중간
+                            option(value="HE03")  맨 바깥쪽 (가장 느슨함)
+                            option(value="HE04")  없음
+
+              div(class="item")
+                div(class="container slide-element")
+                  div(class="content_slide")
+                    div(class="content_slide_survey")
+                      span(class="glyphicon glyphicon-hand-right" aria-hidden="true")
+                        h3 1년 미만 착용한 브라 중 가장 편해서 자주입는 브라의 브랜드와 사이즈가 무엇입니까?
+                        h3 e. 윗 질문에 해당되는 브라(1년미만)이 없다면, 본인이 직접 줄자로 '밑가슴둘레&윗가슴둘레' 를 재서 입력해 주세요.
+
+                        div.col-xs-6
+                          br
+                          img(src="/images/09-01.jpeg" width="30%" style="margin-bottom: 10px;" class="img-responsive")
+                          br
+                          input(type="text" class="form-control input-lg" id="brandSize")
+
+              div(class="item")
+                div(class="container slide-element")
+                  div(class="content_slide")
+                    div(class="content_slide_survey")
+                      span(class="glyphicon glyphicon-hand-right" aria-hidden="true")
+                        h3 선호하는 패드의 볼륨을 알려주세요
+                          h4 원하는 대로 선택하세요.
+
+                          div.col-xs-6
+                            br
+                            label(class="checkbox")
+                              input(type="checkbox" id="PT01" value="PT01")
+                              span 내추럴한 패드 선호
+                            label(class="checkbox")
+                              input(type="checkbox" id="PT02" value="PT02")
+                              span 중간 패드 선호
+                            label(class="checkbox")
+                              input(type="checkbox" id="PT03" value="PT03")
+                              span 두꺼운 패드 선호
+
+              div(class="item")
+                div(class="container slide-element")
+                  div(class="content_slide")
+                    div(class="content_slide_survey")
+                      span(class="glyphicon glyphicon-hand-right" aria-hidden="true")
+                        h3 핏 테스트가 완료되었습니다. '제출'을 눌러주세요. 감사합니다.
+                        br
+                        button(type="button" class="btn btn-primary btn-lg" id="end") 제출
+
+
+            a(class="carousel-control left" href="#main-slider" data-slide="prev")
+              i(class="fa fa-angle-left")
+            a(class="carousel-control right" href="#main-slider" data-slide="next")
+              i(class="fa fa-angle-right")
+
+

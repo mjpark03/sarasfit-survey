@@ -1,0 +1,32 @@
+body {
+    padding-top: 70px; /*Required FOR FIXED TOP NAVBAR*/
+    /*background-color: #f7f6f5;*/
+}
+
+/*  REQUIRED POLL DIV STYLES */
+
+.user-poll-section .progress {
+    height: 5px;
+}
+
+.user-poll-section .panel {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+@media (min-width: 1200px) {
+    .content {
+        position: relative;
+        padding: 37px 0 0 200px;
+    }
+}
+
+
+
