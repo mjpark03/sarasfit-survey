@@ -4,9 +4,14 @@
 		Modified by Rachel for Sara's Fit Survey
 		-----> START
 	*/
+	#slider .slide-element #test{
+		/*display: none;*/
+		width: 50%; !important;
+		margin-left: 10px;
+	}
 	#slider .slide-element img{
 		/*display: none;*/
-		width: 50%;
+		width: 20%;
 		margin-left: 10px;
 	}
 	#slider .carousel-control{
