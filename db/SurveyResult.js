@@ -13,8 +13,20 @@ var SurveyResult = db.define('SurveyResult',{
     primaryKey : true,
     autoIncrement: true
   },
+  name : {
+    type : Sequelize.STRING(45),
+    allowNull : true
+  },
   birth : {
     type : Sequelize.STRING(45),
+    allowNull : true
+  },
+  phoneNumber : {
+    type : Sequelize.STRING(45),
+    allowNull : true
+  },
+  email : {
+    type : Sequelize.STRING(255),
     allowNull : true
   },
   chestShapeFrontCd : {

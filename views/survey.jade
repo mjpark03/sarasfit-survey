@@ -31,12 +31,20 @@ block content
                 div(class="container slide-element")
                   div(class="content_slide")
                     div(class="content_slide_survey")
-                      span(class="glyphicon glyphicon-hand-right" aria-hidden="true")
-                        h3 먼저 생년월일을 YYYY/MM/DD형식으로 입력해주세요.
-                        h4 예) 19xx/08/10
+                      span(class="glyphicon glyphicon-hand-left" aria-hidden="true")
+                        h3 이름 / 연락처 / 이메일 / 생년월일을 입력해주세요.
+                        br
                         div.col-xs-6
-                          br
-                          input(type="text" class="form-control input-lg" id="birth")
+                          input(type="text" class="form-control input-lg" id="name" placeholder="이름")
+                        br
+                        div.col-xs-6
+                          input(type="text" class="form-control input-lg" id="birth" placeholder="생년월일 예) 1987/03/03")
+                        br
+                        div.col-xs-6
+                          input(type="text" class="form-control input-lg" id="phoneNumber" placeholder="전화번호 예) 010112345678")
+                        br
+                        div.col-xs-6
+                          input(type="text" class="form-control input-lg" id="email" placeholder="이메일")
 
               div(class="item")
                 div(class="container slide-element")

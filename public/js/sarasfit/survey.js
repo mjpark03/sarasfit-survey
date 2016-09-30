@@ -14,7 +14,10 @@ $(function() {
 
     var params = {};
 
+    var name = $('#name').val();
     var birth = $('#birth').val();
+    var phoneNumber = $('#phoneNumber').val();
+    var email = $('#email').val();
     var chestShapeFrontCd = '';
     var CSFCount = 0;
     $("#chestShapeFrontCd").data("picker").selected_values().forEach(function(value, index) { 
@@ -63,7 +66,10 @@ $(function() {
     }
 
 
+    params.name = name;
     params.birth = birth;
+    params.phoneNumber = phoneNumber;
+    params.email = email;
     params.chestShapeFrontCd = chestShapeFrontCd;
     params.chestShapeSideCd = chestShapeSideCd;
     params.braSpaceCd = braSpaceCd;
